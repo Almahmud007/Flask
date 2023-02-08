@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+<div class="content">
+    <h1 style="text-align: center">Product Price Calculator</h1>
+
+    <div class="form">
+        <form action="/math" method="POST">
+            <label form="operation">Input all item price here</label>
+            <select name="operation">
+                <option></option>
+              </select>
+            <input type="text" name="number1" id="number1" placeholder="Enter Item Price Here..">
+            <input type="text" name="number2" id="number2" placeholder="Enter Item Price Here..">
+            <input type="text" name="number3" id="number3" placeholder="Enter Item Price Here..">
+            <input type="text" name="number4" id="number4" placeholder="Enter Item Price Here..">
+            <input type="text" name="number5" id="number5" placeholder="Enter Item Price Here..">
+            <input type="text" name="number6" id="number6" placeholder="Enter Item Price Here..">
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
